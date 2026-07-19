@@ -9,6 +9,9 @@ Select a supported asset, such as a Scene asset, and you will see a new **Add Co
 There are two ways to create a custom Scene Component:
 
 1. Create one through the **Add Component** menu.
+
+![AddComponent](./Images/AddComponent.png)
+
 2. Create a new C# script manually.
 
 If you create the component manually, it must inherit from `SceneComponent` and define which asset types it can be added to using the `CanAddTo` attribute.
