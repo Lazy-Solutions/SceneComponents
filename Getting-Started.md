@@ -72,3 +72,37 @@ SceneComponentManager.GetAllComponentOfType<T>();
 This returns all components of a specific type that are available to the system.
 
 For more available methods and advanced usage, see the [API](./API/) documentation.
+
+## Overview Window
+
+The **Overview** window provides a central place to manage all Scene Components in your project.
+
+Open it from:
+
+**Window > Scene Components**
+
+From here you can:
+
+- View every asset that contains Scene Components.
+- Search for assets by component type.
+- Quickly add or remove components.
+- Inspect the components attached to each asset.
+
+This is particularly useful for large projects where manually locating components across many assets becomes difficult.
+
+![Overview Window](./Images/OverviewEditor.png)
+
+## Advanced Scene Manager Integration
+
+If you're using [Advanced Scene Manager](https://lazy.solutions/advanced-scene-manager), Scene Components integrates directly with it.
+
+In addition to Scene assets, you can also attach components to **Scene Collections** and access them using the familiar API.
+
+```csharp
+scene.GetComponent<T>();
+sceneCollection.GetComponent<T>();
+```
+
+Advanced Scene Manager also adds a convenient **Components** menu to every Scene and Scene Collection, making it quick to add, remove, and inspect components without leaving the Scene Manager window.
+
+![ASM Components Menu](./Images/ASMMenu.png)
