@@ -78,18 +78,3 @@ Invokes a `UnityEvent` when the scene containing the component becomes the activ
 | Member           | Description                                   |
 | ---------------- | --------------------------------------------- |
 | `sceneActivated` | Invoked when the owning scene becomes active. |
-
-## Badge legend
-
-| Badge                                                                                      | Meaning                                                                           |
-| ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| <img src="https://img.shields.io/badge/Editor_API-blue?logo=unity" alt="Editor API" />     | Used only by the Unity Editor. Does not need to be wrapped in `#if UNITY_EDITOR`. |
-| <img src="https://img.shields.io/badge/Editor_Only-orange?logo=unity" alt="Editor Only" /> | Only available in the Unity Editor. Must be wrapped in `#if UNITY_EDITOR`.        |
-
-<!--
-Soft editor dep:
-<img src="https://img.shields.io/badge/Editor_API-blue?logo=unity" alt="Editor API" title="Used only by the Unity Editor. Does not need to be wrapped in #if UNITY_EDITOR." />
-
-Hard editor dep:
-<img src="https://img.shields.io/badge/Editor_Only-orange?logo=unity" alt="Editor Only" title="Only available in the Unity Editor. Must be wrapped in #if UNITY_EDITOR." />
--->
