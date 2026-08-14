@@ -24,8 +24,6 @@ The manager also handles the component lifecycle. It automatically invokes `OnGa
 
 Most interactions with asset components are performed through extension methods rather than `SceneComponentManager`. These methods are available on supported asset types and internally use the manager.
 
-## Extension methods
-
 | Type | Query | Modify |
 | --- | --- | --- |
 | `Scene` | `GetComponent<T>()`<br>`GetComponents<T>()`<br>`HasComponent<T>()` | `AddComponent<T>()`<br>`RemoveComponent()` |
