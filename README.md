@@ -1,4 +1,4 @@
-# Scene Components for Unity
+# [Scene Components]() for Unity
 
 **Scene Components** is a Unity asset that lets you add Components directly to Unity assets.
 

@@ -54,7 +54,9 @@ asset.GetComponent<T>();
 Example:
 
 ```csharp
-LoadingSettings settings = scene.GetComponent<LoadingSettings>();
+LoadingSettings settings = gameObject.scene.GetComponent<LoadingSettings>();
+
+LoadingSettings settings = SceneManager.GetSceneByName("Level1").GetComponent<LoadingSettings>();
 ```
 
 This is the recommended approach when you already know which asset you want to access.
@@ -63,15 +65,13 @@ This is the recommended approach when you already know which asset you want to a
 
 Sometimes you need to find assets based on the components they contain. For example, an editor tool might need to find all Scenes that contain a specific component.
 
-In these cases, you can use the `SceneComponentManager`.
+In these cases, you can use the [SceneComponentManager](./API/SceneComponentManager.md).
 
 ```csharp
-SceneComponentManager.GetAllComponentOfType<T>();
+SceneComponentManager.GetComponents<T>();
 ```
 
 This returns all components of a specific type that are available to the system.
-
-For more available methods and advanced usage, see the [API](./API/) documentation.
 
 ## Overview Window
 
