@@ -8,10 +8,6 @@ Most APIs for working with individual assets are exposed through the [extension 
 
 The manager also handles the component lifecycle. It automatically invokes `OnGameStart()` and `OnGameQuit()` when entering and exiting Play Mode (or when the application starts and quits in a player), and `OnSceneLoaded()` and `OnSceneUnloaded()` when scenes are loaded and unloaded.
 
-## `SceneComponentManager` members
-
-### Events
-
 | Member | Description |
 | --- | --- |
 | `onComponentsChanged` | Raised whenever components are added to or removed from an asset. |
